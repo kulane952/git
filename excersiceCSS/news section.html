@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Layout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+        }
+
+        /* MAIN GRID */
+        .container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        /* LEFT SIDE */
+        .left {
+            flex: 2;
+        }
+
+        /* RIGHT SIDE */
+        .ads {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* TITLE */
+        .section-title {
+            background: #222;
+            color: white;
+            display: inline-block;
+            padding: 10px 18px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 2px;
+            background: #222;
+            left: 100%;
+            top: 50%;
+        }
+
+        /* BLOG ITEM */
+        .blogs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .blogs img {
+            width: 250px;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .blog h2 {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .blog p {
+            font-size: 13px;
+            font-weight: 400;
+            color: #767676;
+            line-height: 21px;
+        }
+
+        .blog p:hover {
+            color: #4db2ec;
+        }
+
+        .blog span {
+            font-size: 12px;
+            color: gray;
+        }
+
+
+        /* ADS */
+        .ads h3 {
+            background: #8a49d1;
+            color: white;
+            padding: 8px 12px;
+            width: fit-content;
+            position: relative;
+        }
+
+        .ads h3::after {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 2px;
+            background: #8a49d1;
+            top: 50%;
+            left: 100%;
+            transition: 0.3s ease;
+        }
+
+        .ads h3:hover::after {
+            width: 200px;
+            background: #ff4db8;
+        }
+
+        .ads h2 {
+            font-size: 20px;
+        }
+        .ads h2:hover{
+            color: #8a49d1;;
+        }
+
+        .ads p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .ads p:hover{
+            color: #8a49d1;;
+        }
+
+        .ads img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT -->
+        <div class="left">
+
+            <div class="section-title">PERFORMANCE TRAINING</div>
+
+            <div class="blogs">
+                <img src="https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/97-485x360.jpg">
+                <div class="blog">
+                    <h2>KTM Marchetti Signs with Larranaga and Zanotti for Next Season</h2>
+                    <p>We woke reasonably late following the feast and free flowing wine the night before. After
+                        gathering ourselves and our packs, we headed down to our homestay family’s small dining....</p>
+                    <span>Armin Vans - Aug 7, 2019</span>
+                </div>
+            </div>
+
+            <div class="blogs">
+                <img src="https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/96-485x360.jpg">
+                <div class="blog">
+                    <h2>Celebrating 25 Years Since Italy’s First Ever Touring Inclusion</h2>
+                    <p>We woke reasonably late following the feast and free flowing wine the night before. After
+                        gathering ourselves and our packs, we headed down to our homestay family’s small dining..</p>
+                    <span>Armin Vans - Aug 7, 2019</span>
+                </div>
+            </div>
+            <div class="blogs">
+                <img src="https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/94-485x360.jpg">
+                <div class="blog">
+                    <h2>Rumors, Gossip and Unfounded Truths: Every Moto Release Story</h2>
+                    <p>We woke reasonably late following the feast and free flowing wine the night before. After
+                        gathering ourselves and our packs, we headed down to our homestay family’s small dining...</p>
+                    <span>Armin Vans - Aug 7, 2019</span>
+                </div>
+            </div>
+            <div class="blogs">
+                <img src="https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/96-485x360.jpg">
+                <div class="blog">
+                    <h2>Are you Ready? Complete Recap of the Streer Rally Action Shootout</h2>
+                    <p>We woke reasonably late following the feast and free flowing wine the night before. After
+                        gathering ourselves and our packs, we headed down to our homestay family’s small dining...</p>
+                    <span>Armin Vans - Aug 7, 2019</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="ads">
+
+            <img src="https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/10/newspaper-rec300d.jpg">
+
+            <h3>HOLIDAY RECIPES</h3>
+            <h2>Everyone Should Travel for Their Favorite Foods</h2>
+            <span>Armin Vans - August 7, 2019</span>
+
+            <img src="https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/59-485x360.jpg">
+
+            <p>We woke reasonably late following the feast and free flowing wine the night before. After gathering
+                ourselves and our packs, we headed down to...</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

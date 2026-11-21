@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Responsive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        /* img{
+            max-width: 200px;
+            height: 200px;
+        } */
+        .posts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(25% - 20px);
+            min-width: 200px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #fff;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .posts:hover {
+            transform: translateY(-5px);
+        }
+
+        .posts img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        @media (max-width:1024px) {
+            .posts {
+                width: calc(33.33% - 20px);
+            }
+
+        }
+        @media (max-width:768px) {
+            .posts {
+                width: calc(50% - 20px);
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .posts {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="posts">
+            <img src="https://images.pexels.com/photos/31154461/pexels-photo-31154461.jpeg" alt="Blog Post Image">
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </div>
+        <div class="posts">
+            <img src="https://images.pexels.com/photos/31154461/pexels-photo-31154461.jpeg" alt="Blog Post Image">
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </div>
+        <div class="posts">
+            <img src="https://images.pexels.com/photos/31154461/pexels-photo-31154461.jpeg" alt="Blog Post Image">
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </div>
+        <div class="posts">
+            <img src="https://images.pexels.com/photos/31154461/pexels-photo-31154461.jpeg" alt="Blog Post Image">
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </div>
+        <div class="posts">
+            <img src="https://images.pexels.com/photos/31154461/pexels-photo-31154461.jpeg" alt="Blog Post Image">
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </div>
+        <div class="posts">
+            <img src="https://images.pexels.com/photos/31154461/pexels-photo-31154461.jpeg" alt="Blog Post Image">
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

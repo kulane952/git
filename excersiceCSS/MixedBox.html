@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Box </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: cadetblue;
+        }
+
+        .container {
+            position: fixed;
+            position: relative;
+            top: 0;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            padding: 10px 20px;
+            margin: 20px 0;
+
+
+        }
+
+        .container a {
+            color: white;
+            text-decoration: none;
+            background-color: #1a25bc;
+            border-radius: 1px;
+            padding: 10px 20px;
+            margin: 10px;
+
+
+
+        }
+
+        .container-image {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            margin-top: 200px;
+
+        }
+
+        .container-image img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            /* top: 50%; */
+            left: 50%;
+            bottom: 0px;
+            border: 2px solid #1a25bc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Contact">Contact</a>
+    </div>
+    <div class="container-image">
+        <img src="https://images.pexels.com/photos/15308473/pexels-photo-15308473.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/15308473/pexels-photo-15308473.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/15308473/pexels-photo-15308473.jpeg" alt="">
+    </div>
+
+
+</body>
+
+</html>

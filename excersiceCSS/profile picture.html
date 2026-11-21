@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile picture</title>
+    <style>
+        .profile-card {
+            position: relative;
+            width: 350px;
+            height: 530px;
+            
+
+        }
+
+        .profile-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .user-info {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: white;
+            background-color: hsla(0, 5%, 13%, 0.5);
+            width: 100%;
+            height: 100px;
+             display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .user-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .user-location {
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <img src="https://images.pexels.com/photos/6910724/pexels-photo-6910724.png" alt="" class="profile-image">
+        <div class="user-info">
+            <p class="user-name">John Doe</p>
+            <p class="user-location">New York, USA</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

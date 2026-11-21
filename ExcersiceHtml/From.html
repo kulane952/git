@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<h1>Registration Form</h1>
+<body>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Full Name"><br><br>
+        <label for="Email"> Email Address: </label>
+        <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+        <label for="Number">Contact Number:</label>
+        <input type="tel" id="number" name="number" required placeholder="Number"><br><br>
+
+        <fieldset>
+            <legend>Preferred Day</legend>
+            <label for="Day1">Day 1</label>
+            <input type="checkbox" id="Day1" name="Day1">
+            <label for="Day2">Day 2</label>
+            <input type="checkbox" id="Day2" name="Day2">
+            <label for="Day3">Day 3</label>
+            <input type="checkbox" id="Day3" name="Day3">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Attendance</legend>
+            <label for="Virtual">Virtual</label>
+            <input type="radio" id="Virtual" name="attendance" value="Virtual">
+            <label for="In-person">In-person</label>
+            <input type="radio" id="In-person" name="attendance" value="In-person">
+        </fieldset>
+
+        <select >
+            <label for="">T-shirt Size </label>
+            <option value="T-shirt Size">select dropdown</option>
+            <option value="S"> S</option>
+            <option value="M">M</option>  
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        <label for="">Sessions of Interest Section:</label>
+        <select name="" id="Interest Section" >
+            <option value="Interest Section">Interest Section</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="AI & Machine Learning">AI & Machine Learning</option>
+
+        </select>
+        <br><br>
+        <fieldset>
+            <legend>Dietary Preferences:</legend>    
+        <label for="Vegetarian">Vegetarian</label>
+        <input type="checkbox" >
+        <label for="Vegan">Vegan</label>
+        <input type="checkbox" >
+        <label for="Gluten-Free">Gluten-Free</label>
+        <input type="checkbox" >
+        <label for="Nut-Free, Dairy-Free">Nut-Free, Dairy-Free</label>
+        <input type="checkbox" >
+        <label for="No Restrictions.">No Restrictions.</label>
+        <input type="checkbox" >
+        </fieldset>
+
+        <label for="Additional Comments Section:">Additional Comments Section:</label>
+        <textarea id="Additional Comments Section:" name="Additional Comments Section:" placeholder="Please share any additional comments or special requirements..."></textarea>
+        <br><br>
+
+       <fieldset>
+        <legend>Consent Section:</legend>
+         <label for="Consent Section:">Consent Section:</label>
+        <input type="checkbox" id="Consent Section:" name="Consent Section:">
+       </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

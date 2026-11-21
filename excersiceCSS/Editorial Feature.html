@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Feature</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 200px 200px;
+         
+            gap: 10px;
+
+        }
+        .container div{
+            background-color: rgb(31, 11, 161);
+            padding: 20px;
+        }
+        .item1{
+            grid-column: 1 /span 2;
+            grid-row: 1/span 2;
+            background: url(https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/h104-696x464.jpg.webp );
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .item2{
+            background: url("https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/28-696x368.jpg.webp") center /cover no-repeat;
+        }
+        .item3{
+            background: url("https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/54-1-696x405.jpg.webp") center / cover no-repeat;
+        }
+        .item4{
+            background: url("https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/43-2-696x464.jpg.webp" ) center / cover no-repeat;
+        }
+        .item5{
+            background: url(https://images.pexels.com/photos/6627357/pexels-photo-6627357.jpeg) center /cover no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+    </div>
+    
+</body>
+</html>

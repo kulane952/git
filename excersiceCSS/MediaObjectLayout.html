@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Object Layout </title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            background-color: antiquewhite;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+        }
+        .container img{
+            width: 300px;
+            height: 300px;
+        }
+        .title{
+            flex: 1;
+        }
+        .actions{
+            display: flex;
+            justify-content: space-between;
+        }
+        .actions button{
+            padding: 10px 20px;
+            background-color: rgb(17, 61, 131);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/31154461/pexels-photo-31154461.jpeg" alt="Media Object">
+
+         <div class="title">
+        <h2>Media Object Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien eget nunc efficitur commodo. Sed at ligula a nunc efficitur bibendum. Curabitur ac odio nec nisl convallis tincidunt.</p>
+          <div class="actions">
+        <button >Add to cart</button>
+        <button>Learn More</button>
+    </div>
+    </div>
+   
+    </div>
+   
+   
+</body>
+</html>
